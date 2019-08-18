@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <link rel="canonical" href="https://warsus.github.io/nursing/" />
+    <style type="text/css">
+    /* --- application CSS here --- */
+    *{
+      background-color: #F5F4F0;
+      font-family: Georgia, serif;
+    }
+    </style>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+  <h1 id="state">R</h1>
+  <script>
+  // register ServiceWorker, remember to use absolute path!
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/nursing/sw.js', {scope: '/nursing/'})
+  }
+  
+  // --- Application code here ---
+  </script>
+</body>
+</html>
