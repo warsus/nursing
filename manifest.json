@@ -3,7 +3,7 @@
   "name": "Nursing",
   "icons": [
       {
-          "src": "/images/icon-192x192.png",
+          "src": "/nursing/images/icon-192x192.png",
           "type": "image/png",
           "sizes": "192x192"
       }
