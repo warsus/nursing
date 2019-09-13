@@ -9,7 +9,8 @@ window.onload = function(){
             img.className.baseVal = "";
             //localStorage.setItem("state", "L")
         } else if (state === "R") {
-            img.setAttribute("transform", "translate(400,0) scale(-1,1)");
+            var width = img.width.baseVal.value * img.width.baseVal.unitType;
+            img.setAttribute("transform", "translate(" + width + ",0) scale(-1,1)");
             img.className.baseVal = "";
             el.innerText = "R";
             //localStorage.setItem("state", "R")

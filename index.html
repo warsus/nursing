@@ -27,6 +27,14 @@
         margin: auto;
         display: block;
     }
+    #state {
+        width:0%;
+    }
+    .visual {
+        max-width: 400px;
+        width: 90%;
+        height: 200px;
+    }
     </style>
     <link rel="manifest" href="manifest.json">
     <script type="text/javascript" src="index.js"></script>
@@ -35,9 +43,9 @@
 </head>
 <body>
   <div id="wrapper">
-    <svg class="center" width="400" height="200"
+    <svg class="center visual"
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <image class="hide" id="baby" xlink:href="images/mdn_logo_only_color.png" height="200" width="200"/>
+        <image class="hide" id="baby" xlink:href="images/mdn_logo_only_color.png" height="200" width="50%"/>
     </svg>
     <div><button class="switch" id="switch">Switch</button></div>
     <div class="center" id="state">?</div>
