@@ -4,23 +4,58 @@
     <title>Title</title>
     <link rel="canonical" href="https://warsus.github.io/nursing/" />
     <style type="text/css">
-    /* --- application CSS here --- */
-    *{
+    body {
       background-color: #F5F4F0;
       font-family: Georgia, serif;
+   }
+    .color-1 {
+        background-color: #A4A4A0;
+    }
+    .color-2 {
+        background-color: #144464;
+    }
+    .hide {
+        display: none;
+    }
+    .switch {
+        max-width: 400px;
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+    .center {
+        margin: auto;
+        display: block;
     }
     </style>
     <link rel="manifest" href="manifest.json">
     <script type="text/javascript" src="index.js"></script>
     <link rel="shortcut icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1 id="state">?</h1>
+  <div id="wrapper">
+    <svg class="center" width="400" height="200"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image class="hide" id="baby" xlink:href="images/mdn_logo_only_color.png" height="200" width="200"/>
+    </svg>
+    <div><button class="switch" id="switch">Switch</button></div>
+    <div class="center" id="state">?</div>
+    <div class="hide" id="settingsWrapper">
+        <button>+</button>
+        <div id="settings" style="display: none">
+        <ul id="colors">
+            <li class="color-1">c1</li>
+            <li class="color-2">c2</li>
+        </ul>
+        </div>
+    </div>
+  </div>
   <script>
-  // register ServiceWorker, remember to use absolute path!
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/nursing/sw.js', {scope: '/nursing/'})
-  }
+    // register ServiceWorker, remember to use absolute path!
+    if (navigator.serviceWorker) {
+        navigator.serviceWorker.register('/nursing/sw.js', {scope: '/nursing/'})
+    }
   
   // --- Application code here ---
   </script>
